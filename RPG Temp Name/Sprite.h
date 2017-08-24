@@ -1,5 +1,5 @@
 #pragma once
-class Menu
+class Sprite
 {
 	bool isVisible = false;
 	int xPosition = 0;
@@ -11,28 +11,26 @@ public:
 	void setVisibility(bool visible);
 	void initialize();
 	bool visibility();
-	Menu(int x, int y);
-	~Menu();
+	Sprite(int x, int y);
+	~Sprite();
 };
-
-Menu::Menu(int x, int y)
+Sprite::Sprite(int x, int y)
 {
 	xPosition = x;
 	yPosition = y;
 }
-Menu::~Menu()
+Sprite::~Sprite()
 {
 }
-void Menu::setVisibility(bool visible)
+void Sprite::setVisibility(bool visible)
 {
 	isVisible = visible;
 }
-bool Menu::visibility()
+bool Sprite::visibility()
 {
 	return isVisible;
 }
-//Need to figure out how to 
-void Menu::initialize()
+void Sprite::initialize()
 {
 
 }
