@@ -40,7 +40,19 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="TempTitleScreen.png">
+    <Image Include="Graphics\TempTitleBlock.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\TempTitleScreen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\TempOptionsButton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\TempPlayGame.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\TempQuitGame.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

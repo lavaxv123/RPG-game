@@ -4,12 +4,13 @@ class Menu
 	bool isVisible = false;
 	int xPosition = 0;
 	int yPosition = 0;
-	sf::Texture texture;
-	sf::Sprite sprite;
+	
 
 public:
+	sf::Texture texture;
+	sf::Sprite sprite;
 	void setVisibility(bool visible);
-	void initialize();
+	void initialize(std::string fileName);
 	bool visibility();
 	Menu(int x, int y);
 	~Menu();
@@ -31,8 +32,11 @@ bool Menu::visibility()
 {
 	return isVisible;
 }
-//Need to figure out how to 
-void Menu::initialize()
-{
 
+//code for initializing and loading the sprite for the menu
+void Menu::initialize(std::string fileName)
+{
+	if (!texture.loadFromFile(fileName))
+		std::cout << "error could not load player image" << std::endl;
+	sprite.setTexture(texture);
 }

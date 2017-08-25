@@ -130,7 +130,11 @@
     <ClInclude Include="Sprite.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="TempTitleScreen.png" />
+    <Image Include="Graphics\TempOptionsButton.png" />
+    <Image Include="Graphics\TempPlayGame.png" />
+    <Image Include="Graphics\TempQuitGame.png" />
+    <Image Include="Graphics\TempTitleBlock.png" />
+    <Image Include="Graphics\TempTitleScreen.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
